@@ -27,3 +27,16 @@ envFrom:
   - secretsRef:
       name: <secret name>
 ```
+
+## Execute commands in pod
+
+```shell
+# single command
+kubectl exec <POD_NAME> -- <command>
+
+# interactive shell (/bin/bash is generally not available)
+kubectl exec -it <POD_NAME> [-c <CONTAINER>] -- /bin/sh
+```
+
+## Create debugging pod
+ - source: https://archive.ph/Miwsz
