@@ -4,6 +4,13 @@
 
 Use `.dockerignore` to ignore particular files when using commands such as `COPY`.
 
+## Building Docker images
+
+```shell
+# multi-arch build
+docker buildx build --platform=linux/amd64,linux/arm64 -t <name>:<tag> .
+```
+
 ## Running Docker containers
 
 ```shell
