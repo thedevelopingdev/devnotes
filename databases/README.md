@@ -2,7 +2,11 @@
 
 ## MySQL
 
-```sql
+```shell
+mysql -u <USERNAME> -p<PASSWORD> -h <HOST> -P <PORT> -D <DATABASE>
+```
+
+```mysql
 # show all tables
 SHOW TABLES;
 
@@ -16,3 +20,4 @@ DELETE FROM <table_name>;
 # delete select rows from table
 DELETE FROM <table_name> WHERE <condition>;
 ```
+
