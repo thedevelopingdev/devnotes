@@ -16,3 +16,5 @@ docker buildx build --platform=linux/amd64,linux/arm64 --push -t <name>:<tag> .
 ```shell
 docker run -d -p <host>:<container> --rm --name <name> <image>:[tag]
 ```
+
+
