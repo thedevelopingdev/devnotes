@@ -28,6 +28,12 @@ envFrom:
       name: <secret name>
 ```
 
+## Update secret
+
+```shell
+kubectl create secret generic <SECRET_NAME> --save-config --dry-run=client --from-file=<FILENAME> -o yaml | kubectl apply -f -
+```
+
 ## Execute commands in pod
 
 ```shell
